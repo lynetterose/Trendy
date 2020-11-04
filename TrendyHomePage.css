@@ -19,6 +19,7 @@ body{
 .header{
 	overflow: hidden;
 	background-color: rgba(255, 149, 131, 0.2);
+	
 	padding: 20px 10px;
 	text-align:center;
     font-size: 25px;
@@ -31,9 +32,11 @@ body{
 float:left
 
 }
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
+.header img {
+  float: left;
+  width: 100px;
+  height: 80px;
+  background: #555;
 }
 
 .header a.active {
