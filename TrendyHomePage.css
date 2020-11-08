@@ -14,12 +14,15 @@ html{
 * {box-sizing: border-box;}
 
 body{
-margin:0;
+
 }
-.header{
-	overflow:hidden;
+div.header{
+	
+	display: flex;
 	height: 70px;
-	position: relative;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
 	background-color: rgba(255, 99, 71, 0.1);
 	font-family: "Lucida Console", Courier;
 	color: rgba(0, 0, 0, 0.5);
@@ -28,27 +31,25 @@ margin:0;
 
 .companyname {
   position: relative;
-  top: -5px;
-  left: 20px;
+  top: 5%;
+  left: 1%;
   font-size: 25px;
 
 }
 
 .cod {
 	font-size: 25px;
-	text-align:center;
 	position: relative;
-	top: -55px;
-    left: 20px;
+	top: 5%;
+    left: 23%;
 	
 }
 
 .header-right {
+	
 position: relative;
-	top: -100px;
-    right: -1100px;
-
-
+	top: 15%;
+    right: -43%;
 }
 
 .header a.active {
@@ -76,5 +77,46 @@ font-size: 20px;
 }
 
 
+/***Medium Devices***/
+@media (min-width: 992px) and (max-width: 1199px) {
+ .cod {
+	
+	position: relative;
+	top: 5%;
+    left: 15%;
+	
+}
+
+.header-right {
+position: relative;
+	top: 20%;
+    right: -25%;
+}
+}
+
+/***Small Devices***/
+@media (max-width: 991px) {
+.cod {
+	
+	position: relative;
+	top: 95%;
+    left: -35%;
+	
+}
+
+
+.header-right {
+position: relative;
+	top: 205%;
+    right: 65%;
+}	
+
+.header a.about {
+	color: white;
+padding: 8px 5px;
+font-size: 20px;
+
+}
+}
 
 
